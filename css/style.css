@@ -1,0 +1,86 @@
+.header>h1,
+h2 {
+        color: #fff;
+        margin: 30px;
+        /* transition: 0.23s;
+        animation: h1; */
+}
+
+.data {
+        text-align: center;
+}
+
+.data2 {
+        display: flex;
+        text-align: center;
+}
+
+
+
+button {
+        width: 200px;
+        /* height: 70px; */
+        padding: 20px;
+        margin: 5px;
+        background: none;
+        /* display: block; */
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid #ffffff;
+        color: rgb(255, 255, 255);
+        transition: 0.20s;
+        border-radius: 30px;
+}
+
+button:hover,
+button:focus {
+        background: #ffffff41;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+        outline: none;
+        width: 260px;
+}
+
+.bar {
+        margin: 10px 40px;
+        padding: 5px;
+        color: #fff;
+        transition: 0.2s;
+}
+
+.bar:hover {
+        cursor: pointer;
+}
+
+.imgbox {
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        float: right;
+}
+
+.imgbox>img {
+        pointer-events: none;
+        border-radius: 50%;
+}
+
+input[type='range'] {
+        width: 440px;
+        pointer-events: none;
+}
+
+
+@media (max-width:600px) {
+        button {
+                padding: 15px;
+                margin: 10px auto;
+        }
+
+        .data {
+                margin-top: 30px;
+        }
+
+        input[type='range'] {
+                width: 300px;
+        }
+}
