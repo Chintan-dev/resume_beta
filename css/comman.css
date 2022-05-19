@@ -100,7 +100,7 @@ button:focus {
 
 .imgbox>img {
         pointer-events: none;
-        border-radius: 50%;
+        border-radius: 60% 40% 64% 36% / 28% 76% 24% 72%;
 }
 
 input[type='range'] {
