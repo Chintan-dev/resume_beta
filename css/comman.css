@@ -1,23 +1,24 @@
 * {
-        margin: 0;
-        padding: 0;
-        /* transition: 0.23s; */
+    margin: 0;
+    padding: 0;
+    /* transition: 0.23s; */
 }
 
 a {
-        text-decoration: none;
+    text-decoration: none;
 }
 
 body {
-        /* background-image: 'img/772308.jpg'; */
-        background: url('../img/ilya-pavlov-87438-unsplash.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        object-fit: cover;
-        height: 100%;
-        /* background-filter: blur(1px); */
+    /* background-image: 'img/772308.jpg'; */
+    background: url('../img/ilya-pavlov-87438-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    height: 100%;
+    /* background-filter: blur(1px); */
 }
+
 
 /* .row {
         border: red 1px solid;
@@ -28,103 +29,145 @@ body {
 } */
 
 .container {
-        background-color: #ffffff10;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        height: min-content;
-        border-radius: 10px;
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+    background-color: #ffffff10;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: min-content;
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .header>h1,
 h2 {
-        color: #fff;
-        margin: 30px;
-        /* transition: 0.23s;
+    color: #fff;
+    margin: 30px;
+    /* transition: 0.23s;
         animation: h1; */
 }
 
 .data {
-        text-align: center;
+    text-align: center;
 }
 
 .data2 {
-        display: flex;
-        text-align: center;
+    display: flex;
+    text-align: center;
 }
 
-
-
 button {
-        width: 200px;
-        /* height: 70px; */
-        padding: 20px;
-        margin: 5px;
-        background: none;
-        /* display: block; */
-        margin: 20px auto;
-        text-align: center;
-        border: 1px solid #ffffff;
-        color: rgb(255, 255, 255);
-        transition: 0.20s;
-        border-radius: 30px;
+    width: 200px;
+    /* height: 70px; */
+    padding: 20px;
+    margin: 5px;
+    background: none;
+    /* display: block; */
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    transition: 0.20s;
+    border-radius: 30px;
 }
 
 button:hover,
 button:focus {
-        background: #ffffff41;
-        border: 1px solid #ffffff;
-        cursor: pointer;
-        outline: none;
-        width: 260px;
+    background: #ffffff41;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 260px;
 }
 
 .bar {
-        margin: 10px 40px;
-        padding: 5px;
-        color: #fff;
-        transition: 0.2s;
+    margin: 10px 40px;
+    padding: 5px;
+    color: #fff;
+    transition: 0.2s;
 }
 
 .bar:hover {
-        cursor: pointer;
+    cursor: pointer;
 }
 
 .imgbox {
-        pointer-events: none;
-        display: flex;
-        justify-content: center;
-        float: right;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    float: right;
+}
+
+.imgbox_shadow {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    float: right;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.9), 0 0 0 20px rgba(255, 255, 255, 0.7), 0 0 0 30px rgba(255, 255, 255, 0.5), 0 0 0 40px rgba(255, 255, 255, 0.3), 0 0 0 50px rgba(255, 255, 255, 0.1);
 }
 
 .imgbox>img {
-        pointer-events: none;
+    pointer-events: none;
+    animation: animate 10s linear infinite;
+    /* border-radius: 60% 40% 64% 36% / 28% 76% 24% 72%; */
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 32% 68% 70% 30% / 73% 51% 49% 27%;
+    }
+    20% {
+        border-radius: 81% 19% 84% 16% / 24% 84% 16% 76%;
+    }
+    40% {
+        border-radius: 67% 33% 71% 29% / 29% 70% 30% 71%;
+    }
+    45% {
+        border-radius: 53% 47% 48% 52% / 49% 52% 48% 51%;
+    }
+    55% {
+        border-radius: 53% 47% 48% 52% / 49% 52% 48% 51%;
+    }
+    60% {
+        border-radius: 37% 63% 33% 67% / 63% 41% 59% 37%;
+    }
+    80% {
+        border-radius: 32% 68% 31% 69% / 81% 27% 73% 19%;
+    }
+    100% {
         border-radius: 60% 40% 64% 36% / 28% 76% 24% 72%;
+    }
 }
 
 input[type='range'] {
-        width: 440px;
-        pointer-events: none;
+    width: 440px;
+    pointer-events: none;
 }
 
-
 @media (max-width:600px) {
-        .container {
-                margin-top: 0px;
-                margin-bottom: 0px;
-        }
-
-        button {
-                padding: 15px;
-                margin: 10px auto;
-        }
-
-        .data {
-                margin-top: 30px;
-        }
-
-        input[type='range'] {
-                width: 300px;
-        }
+    .container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    button {
+        padding: 15px;
+        margin: 10px auto;
+    }
+    .data {
+        margin-top: 30px;
+    }
+    input[type='range'] {
+        width: 300px;
+    }
+    .header_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .imgbox_shadow {
+        margin: 40px 0;
+    }
 }
