@@ -52,12 +52,7 @@ button:focus {
         cursor: pointer;
 }
 
-.imgbox {
-        pointer-events: none;
-        display: flex;
-        justify-content: center;
-        float: right;
-}
+
 
 .imgbox>img {
         pointer-events: none;

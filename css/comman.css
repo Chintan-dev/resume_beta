@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    font-size: large;
 }
 
 body {
@@ -29,17 +30,26 @@ body {
 } */
 
 .container {
-    background-color: #ffffff10;
-    margin-top: 40px;
-    margin-bottom: 20px;
+
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
     height: min-content;
+
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* height: 100vh; */
+    background-color: #ffffff10;
     border-radius: 10px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
 
 .header>h1,
-h2 {
+h2,
+h3 {
     color: #fff;
     margin: 30px;
     /* transition: 0.23s;
@@ -93,8 +103,10 @@ button:focus {
 .imgbox {
     pointer-events: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     float: right;
+    margin-right: 4%;
+    margin-top: 4%;
 }
 
 .imgbox_shadow {
@@ -119,24 +131,31 @@ button:focus {
     0% {
         border-radius: 32% 68% 70% 30% / 73% 51% 49% 27%;
     }
+
     20% {
         border-radius: 81% 19% 84% 16% / 24% 84% 16% 76%;
     }
+
     40% {
         border-radius: 67% 33% 71% 29% / 29% 70% 30% 71%;
     }
+
     45% {
         border-radius: 53% 47% 48% 52% / 49% 52% 48% 51%;
     }
+
     55% {
         border-radius: 53% 47% 48% 52% / 49% 52% 48% 51%;
     }
+
     60% {
         border-radius: 37% 63% 33% 67% / 63% 41% 59% 37%;
     }
+
     80% {
         border-radius: 32% 68% 31% 69% / 81% 27% 73% 19%;
     }
+
     100% {
         border-radius: 60% 40% 64% 36% / 28% 76% 24% 72%;
     }
@@ -152,21 +171,26 @@ input[type='range'] {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+
     button {
         padding: 15px;
         margin: 10px auto;
     }
+
     .data {
         margin-top: 30px;
     }
+
     input[type='range'] {
         width: 300px;
     }
+
     .header_box {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .imgbox_shadow {
         margin: 40px 0;
     }
