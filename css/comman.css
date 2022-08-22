@@ -40,7 +40,7 @@ body {
 section {
     margin-top: 20px;
     margin-bottom: 20px;
-    /* height: 100vh; */
+    height: 95vh;
     background-color: #ffffff10;
     border-radius: 10px;
     backdrop-filter: blur(12px);
